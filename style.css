@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;600&family=Merriweather:wght@300&display=swap');
+
+
+
+html {
+  font-size: 16px
+}
+
+body {
+  background-color: #F7F9FC;
+  font-family: 'Baloo Da 2', cursive;
+  font-size: 1rem;
+  line-height: 1em;
+  color: rgb(120, 120, 120);
+  text-align: justify;
+}
+
+h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 3rem;
+  color: darkblue;
+  padding: 10px;
+}
+
+h2 {
+  font-family: 'Merriweather', serif;
+  font-size: 2rem;
+  color: violet;
+}
+
+ul {
+  color: rgb(120, 120, 120);
+}
+
+li {
+  display: inline;
+  padding: 10px;
+
+}
+
+a {
+  color: rgb(200, 200, 200);
+  text-decoration: none;
+}
+
+.img-rounded {
+  border-radius: 100%;
+  width: 240px;
+  height: 240px;
+}
+
+.container {
+  width: 800px;
+  margin: 0px auto;
+}
+
+.card {
+  background-color: white;
+  padding: 40px;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+  margin: 20px 0px;
+  text-align: center;
+  border: 1px, solid, grey;
+  border-radius: 8px;
+}
+
+.button {
+  background: darkblue;
+  border-radius: 8px;
+  padding: 30px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px;
+  animation-duration: 1s;
+  animation-name: bounce;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.social-link {
+  list-style: none;
+  padding-left: 0px;
+  font-size: 3rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@keyframes bounce {
+  from {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem
+  }
+
+  to {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@keyframes small-bounce {
+  from {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem
+  }
+
+  to {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (max-width: 1600px) {
+  .container {
+    width: 900px;
+  }
+
+@media (max-width: 960px) {
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  .container {
+    width: 300px;
+  }
+  .button {
+    width: 140px;
+    animation-name: small-bounce;
+  }
+  .img-rounded {
+    border-radius: 100%;
+    width: 160px;
+    height: 160px;
+  }
+}
